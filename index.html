@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        body {
+            padding-top: 100px;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .wrapper {
+            display: block;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-family: 'Arial', sans-serif;
+            font-size: 35px;
+        }
+
+        .form {
+            margin-bottom: 30px;
+        }
+
+        .form__item {
+            outline: 1px solid #999;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .checkbox {
+            display: none;
+        }
+
+        .checkbox:checked + label:before {
+            transform: rotate(45deg);
+            border-top-color: transparent;
+            border-left-color: transparent;
+            width: 10px;
+            top: -5px;
+            left: 5px;
+        }
+
+        .label {
+            font-size: 20px;
+            padding-left: 35px;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .label:before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #000;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all .12s;
+        }
+
+        .site-dev {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .site-dev__link {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .site-dev__link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<main class="wrapper">
+
+    <h1 class="title">Простая анимация чекбокса на чистом Css </h1>
+
+    <form class="form">
+        <div class="form__item">
+            <input type="checkbox" id='one' class="checkbox">
+            <label for="one" class="label">Нажми меня бро</label>
+        </div>
+        <div class="form__item">
+            <input type="checkbox" id='two' class="checkbox">
+            <label for="two" class="label">Нажми меня бро</label>
+        </div>
+        <div class="form__item">
+            <input type="checkbox" id='three' class="checkbox">
+            <label for="three" class="label">Нажми меня бро</label>
+        </div>
+    </form>
+
+    <p class="site-dev">
+        <a href="http://alisultanov.ru/" target="_blank" class="site-dev__link">Алисултанов Шамиль</a>
+    </p>
+
+</main>
+
+</body>
+</html>
